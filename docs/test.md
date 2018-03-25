@@ -1,7 +1,3 @@
-[Qiita](http://qiita.com)
-
-
-
-
-
-[Qiita](http://qiita.com "Qiita")
+*強調*
+**強調**
+***強調***
