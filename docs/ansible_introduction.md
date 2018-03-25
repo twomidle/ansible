@@ -129,3 +129,8 @@ vagrant ssh ubuntu01
 ```
 
 ---
+## 環境構築
+```
+# sudo -u user2 -H dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
+# sudo -u user2 -H dbus-launch gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
+```
