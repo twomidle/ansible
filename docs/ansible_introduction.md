@@ -1,16 +1,17 @@
 
 ## 環境
 ```
-user@ubuntu:~/git/ansible-practice$ uname -a
-Linux ubuntu 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-user@ubuntu:~/git/ansible-practice$ 
+OS:Ubuntu 16.04 LTS
+ansible:2.2
+Vagrant:2.0.2
+VBoxManage:5.2.6r120293
+
 ```
 ---
 
 ## gitインストール　設定
 ```
 sudo apt-get -y install git
-
 git config --global user.name test
 git config --global user.email test@test
 ```
