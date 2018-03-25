@@ -3,6 +3,13 @@
 user@ubuntu:~/git/ansible-practice$ uname -a
 Linux ubuntu 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:04 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
 user@ubuntu:~/git/ansible-practice$ 
+user@ubuntu:~$ cat /etc/lsb-release 
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=16.04
+DISTRIB_CODENAME=xenial
+DISTRIB_DESCRIPTION="Ubuntu 16.04 LTS"
+user@ubuntu:~$ 
+
 
 ・gitインストール　設定
 sudo apt-get -y install git
