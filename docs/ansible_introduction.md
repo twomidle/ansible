@@ -160,8 +160,8 @@ $ vagrant ssh ubuntu01
 ## その他
 ```
 仮想環境を構築中によくロック画面に言ったため、以下コマンドでロック画面にいかないようにする。
-$ sudo -u user2 -H dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
-$ sudo -u user2 -H dbus-launch gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
+$ sudo -u 'username' -H dbus-launch gsettings set org.gnome.desktop.screensaver lock-enabled false
+$ sudo -u 'username' -H dbus-launch gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
 ```
 
 ---
