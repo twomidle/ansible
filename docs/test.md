@@ -1,6 +1,2 @@
-<dl>
-  <dt>オレオ</dt>
-  <dd>クッキー&クリーム</dd>
-  <dt>リッツ</dt>
-  <dd>プレーンクラッカー</dd>
-</dl> 
+[Qiita](http://qiita.com)
+[Qiita](http://qiita.com "Qiita")
