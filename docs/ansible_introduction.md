@@ -13,11 +13,11 @@ VBoxManage:5.2.6r120293
 
 # 手順
 
-## 環境準備
+## 参考サイト（環境準備で必要になるサイト）
 ```
 以下サイトよりインストール
 VMwareの準備　
-https://www.vmware.com/jp/products/workstation-player/workstation-player-evaluation.htmlhttps://www.ubuntulinux.jp/News/ubuntu1604-ja-remix
+https://my.vmware.com/jp/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/14_0
 
 Ubuntu 準備
 https://www.ubuntulinux.jp/News/ubuntu1604-ja-remix
@@ -27,8 +27,14 @@ http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html
 
 Vagrant 準備
 https://www.vagrantup.com/downloads.html
+```
+## 仮想環境準備
+```
+VMwareをダウンロードし、Ubuntuをインストールする。
+参考になるURLを張り付ける。
 
 ```
+
 ## gitインストール　設定
 ```
 $ sudo apt-get -y install git
