@@ -1,4 +1,0 @@
-file1
-{{ ansible_connection }}
-{{ linux }}
-{{ t2 }}

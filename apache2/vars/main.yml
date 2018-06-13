@@ -1,5 +1,0 @@
-apacheMaxRequestsPerChild: 3000
-apacheMaxClients: 900
-ntp: ntp-boston.example.com
-backup: backup-boston.example.com
-apache2_conf: /etc/apache2/apache2.conf 

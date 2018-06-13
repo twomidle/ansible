@@ -1,4 +1,0 @@
----
-- name: rubyをインストール
-  apt: name=ruby state=installed
-  become: true
