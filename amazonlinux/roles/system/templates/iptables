@@ -1,9 +1,0 @@
-*filter
-:INPUT   ACCEPT [0:0]
-:FORWARD DROP   [0:0]
-:OUTPUT  ACCEPT [0:0]
-
--A INPUT -p tcp --dport 80   -j ACCEPT
--A INPUT -p tcp --dport 443  -j ACCEPT
-
-COMMIT
