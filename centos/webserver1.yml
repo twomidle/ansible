@@ -1,0 +1,6 @@
+- name: ubuntu01
+  hosts: ubuntu01
+  roles:
+    - common
+    - apache2
+  become: true
