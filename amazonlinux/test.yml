@@ -1,0 +1,12 @@
+- hosts: localhost
+
+  vars:
+    items:
+      - "hello world!"
+      - "I love cats"
+      - "I love dogs"
+
+  tasks:
+    - name: "echo list item"
+      command: echo {{item}}
+      with_items: items
