@@ -25,7 +25,7 @@ git push -u origin
 python3 -m pip install --user ansible
 
 # ansible install atode kakunin
-pip3 install amazon.aws
+pip3 install amazon.aws  
 pip3 install boto3
 
 # ansible playbook sample
