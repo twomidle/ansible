@@ -1,0 +1,44 @@
+- hosts: localhost
+
+  vars:
+    items:
+      - "hello world!"
+      - "I love cats"
+      - "I love dogs"
+
+  tasks:
+    - name: "echo list item"
+      command: echo {{item}}
+      with_items: items
+
+    - name: "group add"
+      group:
+        gid: 666
+        name: groupname
+        state: present
+
+    - name: "user add"
+      user:
+        name: groupname
+        uid: 333
+        shell: /bin/bash
+        groups: groupname
+        state: present
+
+
+    - name: template test
+      template:
+        src: /tmp/test
+        dest: /opt/test
+        owner: groupname
+        group: groupname
+        mode: 0644
+
+    - name: directory change
+      file:
+        path: /var/log/httpd/test
+        state: directory
+        mode: 0755
+        owner: groupname
+        group: groupname
+        recurse: yes
