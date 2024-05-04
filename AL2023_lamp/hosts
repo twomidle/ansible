@@ -1,0 +1,9 @@
+[webservers]
+web
+
+[dbservers]
+db
+
+[all:vars]
+project_name="test_project01"
+project_env="development"
