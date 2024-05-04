@@ -4,7 +4,7 @@
 
 - name: Copy the code from repository
   git:
-    repo: "{{ repository }}"
+    repo: https://github.com/twomidle/mywebapp
     dest: /var/www/html/
 
 - name: Creates the index.php file

@@ -1,0 +1,9 @@
+[webservers]
+web
+
+[dbservers]
+db
+
+[all:vars]
+project_name="miya"
+webip="10.10.10.10"

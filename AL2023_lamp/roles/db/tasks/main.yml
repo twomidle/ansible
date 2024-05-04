@@ -6,17 +6,10 @@
     name: "{{ item }}"
     state: installed
   with_items:
-   - mariadb-server
-   - MySQL-python
-   - libselinux-python
-   - libsemanage-python
-
-- name: Configure SELinux to start mysql on any port
-  seboolean:
-    name: mysql_connect_any
-    state: true
-    persistent: yes
-  when: sestatus.rc != 0
+   - mariadb105-server
+   - mariadb105-devel
+   - python3-libsemanage
+   - python3-libselinux
 
 - name: Create Mysql configuration file
   template:
@@ -31,24 +24,14 @@
     state: started
     enabled: yes
 
-      #- name: insert iptables rule
-      #  lineinfile:
-      #    dest: /etc/sysconfig/iptables-config 
-      #    state: present
-      #    regexp: "{{ mysql_port }}"
-      #    insertafter: "^:OUTPUT "
-      #    line: "-A INPUT -p tcp  --dport {{ mysql_port }} -j  ACCEPT"
-      #  notify: restart iptables
+- name: mysql client install
+  ansible.builtin.shell: |
+    mysql -e "CREATE DATABASE "foodb" CHARACTER SET utf8mb4"
+    mysql -e "CREATE USER 'foouser'@'localhost' IDENTIFIED BY 'abc'"
+    mysql -e "GRANT ALL PRIVILEGES ON * . * TO 'foouser'@'localhost'"
 
-- name: Create Application Database
-  mysql_db:
-    name: "{{ dbname }}"
-    state: present
-
-- name: Create Application DB User
-  mysql_user:
-    name: "{{ dbuser }}"
-    password: "{{ upassword }}"
-    priv: "*.*:ALL"
-    host: '%'
-    state: present
+- name: ReStart Mysql Service
+  service:
+    name: mariadb
+    state: restarted
+    enabled: yes

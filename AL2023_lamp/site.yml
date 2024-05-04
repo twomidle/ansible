@@ -3,7 +3,7 @@
 
 - name: apply common configuration to all nodes
   hosts: all
-  remote_user: centos
+  remote_user: ec2-user
   become: yes
 
   roles:
@@ -11,7 +11,7 @@
 
 - name: configure and deploy the webservers and application code
   hosts: webservers
-  remote_user: centos
+  remote_user: ec2-user
   become: yes
 
   roles:
@@ -19,7 +19,7 @@
 
 - name: deploy MySQL and configure the databases
   hosts: dbservers
-  remote_user: centos
+  remote_user: ec2-user
   become: yes
 
   roles:
