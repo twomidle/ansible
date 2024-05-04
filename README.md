@@ -10,15 +10,17 @@ export GIT_SSH_COMMAND="ssh -i ~/id_ed25519_miya  -F /dev/null"
 > ssh key はgithub上にも登録すること
 
 # git
-* git command sample  
+* git command sample
+```
 git clone git@github.com:twomidle/ansible.git  
 修正作業  
 git add *  
-git rm `git ls-files --deleted`  
+git rm `git ls-files --deleted` 
 git status  
 git commit -m "YYYY/MM/DD commit"  
 git status  
 git push -u origin  
+```
 
 ## ansible
 # ansible install
