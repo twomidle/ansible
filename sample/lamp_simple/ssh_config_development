@@ -1,0 +1,14 @@
+Host web
+  User centos
+  HostName 172.31.14.211
+  IdentityFile ~/.ssh/linux.pem
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+
+Host db
+  User centos
+  HostName 172.31.13.244
+  IdentityFile ~/.ssh/linux.pem
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+
